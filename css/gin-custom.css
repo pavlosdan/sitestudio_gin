@@ -1,0 +1,14 @@
+/**
+ * @file
+ * Css to override Gin admin theme styling.
+ */
+
+/* Set the width of the table columns like they are on the moderation tab */
+td.views-field-title {
+  max-width: 644px;
+}
+
+/* Ensure Site Studio sidebar browser doesn't interfere with node editing. */
+.gin--edit-form.coh-element-browser {
+  padding-right: var(--ginSidebarWidth) !important;
+}
