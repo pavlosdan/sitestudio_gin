@@ -12,3 +12,20 @@ td.views-field-title {
 .gin--edit-form.coh-element-browser {
   padding-right: var(--ginSidebarWidth) !important;
 }
+
+.gin--vertical-toolbar.ssa-element-browser-modal-open,
+.gin--horizontal-toolbar.ssa-element-browser-modal-open {
+    padding-left: var(--ginSidebarWidth) !important;
+}
+
+.gin--vertical-toolbar.ssa-element-browser-modal-open[data-toolbar-menu=open] {
+    padding-left: calc(var(--ginSidebarWidth) + var(--ginToolbarWidth)) !important;
+}
+
+.gin--vertical-toolbar.ssa-element-browser-modal-open #ssa-sidebar-browser {
+  left: var(--ginToolbarWidthCollapsed) !important;
+}
+
+.gin--vertical-toolbar.ssa-element-browser-modal-open[data-toolbar-menu=open] #ssa-sidebar-browser {
+  left: var(--ginToolbarWidth) !important;
+}
