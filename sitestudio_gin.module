@@ -11,6 +11,10 @@ use Drupal\Core\Form\FormStateInterface;
  * Implements hook_preprocess_HOOK() for page templates.
  */
 function sitestudio_gin_preprocess_page(&$variables) {
+  // Global CSS overrides.
+  $variables['#attached']['library'][] = 'sitestudio_gin/sitestudio_gin-global-overrides';
+
+  // Overrides only if Gin is the active theme.
   $theme = \Drupal::theme()->getActiveTheme()->getName();
   if ($theme == 'gin') {
     $variables['#attached']['library'][] = 'sitestudio_gin/sitestudio_gin-gin-overrides';

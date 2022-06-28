@@ -3,3 +3,9 @@ sitestudio_gin-gin-overrides:
   css:
     theme:
       css/gin-custom.css: {}
+
+sitestudio_gin-global-overrides:
+  version: 1.0
+  css:
+    theme:
+      css/sitestudio-gin-global.css: {}
