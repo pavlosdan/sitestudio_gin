@@ -1,0 +1,24 @@
+/* Add the site studio toolbar icon. */
+.toolbar .toolbar-bar .toolbar-icon.toolbar-icon-cohesion-settings:before,
+#coh-builder-btn::before {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M11.4,0C10.5,3.6,2,5.1,2,13.6C2,19.2,6.5,23.8,12,24c5.6-.1,10-4.8,10-10.4C22,4.5,12.6,3.7,11.4,0z M18.3,17.1 c0,.3-.3,.6-.6,.6H6.3c-.3,0-.6-.3-.6-.6V9.8c0-.3,.3-.6,.6-.6h11.4c0.3,0,.6,.3,.6,.6V17.1z'/%3E%3Ccircle cx='8' cy='11' r='.7'/%3E%3Ccircle cx='10' cy='11' r='.7'/%3E%3Ccircle cx='12' cy='11' r='.7'/%3E%3C/svg%3E%0A");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M11.4,0C10.5,3.6,2,5.1,2,13.6C2,19.2,6.5,23.8,12,24c5.6-.1,10-4.8,10-10.4C22,4.5,12.6,3.7,11.4,0z M18.3,17.1 c0,.3-.3,.6-.6,.6H6.3c-.3,0-.6-.3-.6-.6V9.8c0-.3,.3-.6,.6-.6h11.4c0.3,0,.6,.3,.6,.6V17.1z'/%3E%3Ccircle cx='8' cy='11' r='.7'/%3E%3Ccircle cx='10' cy='11' r='.7'/%3E%3Ccircle cx='12' cy='11' r='.7'/%3E%3C/svg%3E%0A");
+}
+
+#coh-builder-btn {
+  color: var(--colorGinTextLight);
+}
+
+#coh-builder-btn::before {
+  background: var(--colorGinIcons);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center center;
+  mask-position: center center;
+  -webkit-mask-size: var(--iconGinToolbar) var(--iconGinToolbar);
+  mask-size: var(--iconGinToolbar) var(--iconGinToolbar);
+}
+
+.ssa-element-browser-modal-open {
+    padding-left: 320px !important;
+}
